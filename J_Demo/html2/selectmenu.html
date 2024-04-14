@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="Ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>과일 주문하기</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>상품 선택</legend>
+            <p><b>주문할 상품을 선택해주세요.</b></p>
+            <label>
+                <!-- server로 넘겨줄 값 따로 설정해야 함 value 이용 -->
+                <select> 
+                    <option value="special_3" selected>선물용 3kg</option>
+                    <option value="special_5">선물용 5kg</option>
+                    <option value="family_3">가정용 3kg</option>
+                    <option value="family_5">가정용 5kg</option>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>상품 선택</legend>
+            <p><b>주문할 상품을 선택해주세요.</b></p>
+            <label><input type="text" list="goods"></label>
+            <datalist id="goods">
+                <option value="special_3">선물용 3kg</option>
+                <option value="special_5">선물용 5kg</option>
+                <option value="family_3">가정용 3kg</option>
+                <option value="family_5">가정용 5kg</option>
+            </datalist>
+        </fieldset>
+        
+</body>
+</html>
